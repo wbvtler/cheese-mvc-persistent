@@ -16,10 +16,10 @@
         <th>Cheese Category</th>
     </tr>
 
-    <tr th:each="cheese : ${menu.cheeses}">
+    <tr th:each="cheese : ${menuCheeses}">
         <td th:text="${cheese.name}"></td>
         <td th:text="${cheese.description}"></td>
-        <td th:text="${cheese.category}"></td>
+        <td th:text="${cheese.category.name}"></td>
     </tr>
 
 </table>
